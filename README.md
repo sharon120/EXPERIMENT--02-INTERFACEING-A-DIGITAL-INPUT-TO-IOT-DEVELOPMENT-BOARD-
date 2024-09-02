@@ -1,8 +1,8 @@
-###  DATE: 
+###  DATE: 02/09/2024
 
-###  NAME: 
-###  ROLL NO :
-###  DEPARTMENT: 
+###  NAME: Sharon Harshini L M
+###  ROLL NO : 212223040193
+###  DEPARTMENT: BE Computer Science Engineering
 
 
 # EXPERIMENT--02-INTERFACING-A-DIGITAL-INPUT-TO-IOT-DEVELOPMENT-BOARD-
@@ -77,12 +77,36 @@ The full form of an ARM is an advanced reduced instruction set computer (RISC) m
 
 
 ## STM 32 CUBE PROGRAM :
+```
+#include "main.h"
+#include"stdbool.h"
+bool IRstatus;
 
+//While loop
+
+ while ()
+  {
+      if(IRstatus==1)
+      {
+    	  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0,GPIO_PIN_RESET);
+    	 HAL_Delay(1000);
+
+    	  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0, GPIO_PIN_SET);
+    	 HAL_Delay(1000);
+      }
+      else
+      {
+    	  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0, GPIO_PIN_RESET);
+    	 HAL_Delay(1000);
+      }
+  }
+```
 
 
 ## Output  :
  
- 
+ ![image](https://github.com/user-attachments/assets/335215f4-d0c0-45bd-8e68-99918985cd9f)
+
  
  
 ## Result :
